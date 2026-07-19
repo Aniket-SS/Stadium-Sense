@@ -1,7 +1,5 @@
 # Product Requirements Document
 ## Smart Stadiums & Tournament Operations — GenAI Platform
-### PromptWars Virtual · Challenge 4 · FIFA World Cup 2026
-
 
 ## 1. Context & Judging Alignment
 

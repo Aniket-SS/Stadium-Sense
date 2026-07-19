@@ -1,7 +1,5 @@
 # StadiumSense — GenAI Smart Stadiums & Tournament Operations Platform
-
-**Submitted to:** PromptWars Virtual · Challenge 4 (FIFA World Cup 2026)  
-**Total Repository Footprint:** ~0.44 MB (Strictly &lt; 10 MB Submission Constraint)  
+  
 **Live Demo Routes:**  
 - Marketing & Architecture Overview: `/`  
 - Fan Concierge & Interactive Step-Free Wayfinding: `/concierge`  

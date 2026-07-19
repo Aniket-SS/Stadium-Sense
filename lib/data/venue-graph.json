@@ -1,0 +1,232 @@
+{
+  "stadiumName": "NYNJ World Cup Stadium (MetLife)",
+  "tournamentEvent": "FIFA World Cup 2026 Final",
+  "nodes": [
+    {
+      "id": "gate-a",
+      "name": "Gate A (North Plaza Entrance)",
+      "category": "gate",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 8 },
+      "description": "Primary North Plaza gate with dedicated accessible express lane."
+    },
+    {
+      "id": "gate-b",
+      "name": "Gate B (East Concourse Entrance)",
+      "category": "gate",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 88, "y": 50 },
+      "description": "East transit hub connection entrance."
+    },
+    {
+      "id": "gate-c",
+      "name": "Gate C (South Gate Express)",
+      "category": "gate",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 92 },
+      "description": "South general entrance near shuttle bus depot."
+    },
+    {
+      "id": "gate-d",
+      "name": "Gate D (West VIP & Accessible Gate)",
+      "category": "gate",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 12, "y": 50 },
+      "description": "Step-free dedicated West entrance with sensory assistance desk."
+    },
+    {
+      "id": "concourse-north",
+      "name": "North Main Concourse Level 1",
+      "category": "concourse",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 25 },
+      "description": "Spacious Level 1 concourse with multilingual assistance kiosk."
+    },
+    {
+      "id": "concourse-east",
+      "name": "East Concourse Level 1",
+      "category": "concourse",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 75, "y": 50 },
+      "description": "Connecting corridor to Sections 110-120."
+    },
+    {
+      "id": "concourse-south",
+      "name": "South Concourse Level 1",
+      "category": "concourse",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 75 },
+      "description": "Lower bowl access corridor."
+    },
+    {
+      "id": "concourse-west",
+      "name": "West Concourse Level 1",
+      "category": "concourse",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 25, "y": 50 },
+      "description": "Quiet corridor leading to Sensory Haven room."
+    },
+    {
+      "id": "section-101",
+      "name": "Section 101 Lower Bowl North",
+      "category": "seating_zone",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 36 },
+      "description": "Prime lower tier seating behind North goal."
+    },
+    {
+      "id": "section-115",
+      "name": "Section 115 East Midfield",
+      "category": "seating_zone",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 64, "y": 50 },
+      "description": "Lower bowl midfield east seating."
+    },
+    {
+      "id": "section-128",
+      "name": "Section 128 Lower Bowl South",
+      "category": "seating_zone",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 50, "y": 64 },
+      "description": "South endzone lower bowl."
+    },
+    {
+      "id": "section-140",
+      "name": "Section 140 West Club & Accessible Tier",
+      "category": "seating_zone",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 36, "y": 50 },
+      "description": "Premium step-free wheelchair accessible seating area."
+    },
+    {
+      "id": "sensory-room-1",
+      "name": "Sensory Haven Quiet Suite (West)",
+      "category": "sensory_room",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 18, "y": 38 },
+      "description": "Sound-dampened sensory relief room with low lighting and trained support staff."
+    },
+    {
+      "id": "restroom-accessible-n",
+      "name": "North Plaza Accessible Family Restroom",
+      "category": "restroom",
+      "level": 1,
+      "accessible": true,
+      "coordinates": { "x": 62, "y": 24 },
+      "description": "Fully step-free accessible family restroom."
+    }
+  ],
+  "edges": [
+    {
+      "source": "gate-a",
+      "target": "concourse-north",
+      "distanceMeters": 45,
+      "stepFree": true,
+      "instructions": "Enter through Gate A security portals straight into North Main Concourse."
+    },
+    {
+      "source": "concourse-north",
+      "target": "section-101",
+      "distanceMeters": 30,
+      "stepFree": true,
+      "instructions": "Proceed straight ahead through Portal 101 into Lower Bowl North."
+    },
+    {
+      "source": "concourse-north",
+      "target": "restroom-accessible-n",
+      "distanceMeters": 25,
+      "stepFree": true,
+      "instructions": "Turn left along the North concourse corridor for 25 meters."
+    },
+    {
+      "source": "concourse-north",
+      "target": "concourse-east",
+      "distanceMeters": 110,
+      "stepFree": true,
+      "instructions": "Follow the concourse ring eastward toward Section 115."
+    },
+    {
+      "source": "gate-b",
+      "target": "concourse-east",
+      "distanceMeters": 50,
+      "stepFree": true,
+      "instructions": "Enter via Gate B East portals to the East Concourse."
+    },
+    {
+      "source": "concourse-east",
+      "target": "section-115",
+      "distanceMeters": 35,
+      "stepFree": true,
+      "instructions": "Take aisle Portal 115 into East Midfield seating."
+    },
+    {
+      "source": "concourse-east",
+      "target": "concourse-south",
+      "distanceMeters": 110,
+      "stepFree": true,
+      "instructions": "Continue along the perimeter concourse south."
+    },
+    {
+      "source": "gate-c",
+      "target": "concourse-south",
+      "distanceMeters": 40,
+      "stepFree": true,
+      "instructions": "Enter through Gate C express turnstiles."
+    },
+    {
+      "source": "concourse-south",
+      "target": "section-128",
+      "distanceMeters": 30,
+      "stepFree": true,
+      "instructions": "Enter Portal 128 into Lower Bowl South."
+    },
+    {
+      "source": "concourse-south",
+      "target": "concourse-west",
+      "distanceMeters": 110,
+      "stepFree": true,
+      "instructions": "Walk west along the concourse ring toward West VIP."
+    },
+    {
+      "source": "gate-d",
+      "target": "concourse-west",
+      "distanceMeters": 35,
+      "stepFree": true,
+      "instructions": "Enter step-free Gate D West VIP & Accessible entrance."
+    },
+    {
+      "source": "concourse-west",
+      "target": "section-140",
+      "distanceMeters": 25,
+      "stepFree": true,
+      "instructions": "Proceed through Portal 140 directly onto accessible viewing deck."
+    },
+    {
+      "source": "concourse-west",
+      "target": "sensory-room-1",
+      "distanceMeters": 20,
+      "stepFree": true,
+      "instructions": "Turn left into the quiet sensory assistance corridor."
+    },
+    {
+      "source": "concourse-west",
+      "target": "concourse-north",
+      "distanceMeters": 110,
+      "stepFree": true,
+      "instructions": "Complete the concourse loop northbound toward Gate A."
+    }
+  ]
+}

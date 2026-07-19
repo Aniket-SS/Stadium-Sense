@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #FBFAF7;
+  --color-obsidian: #12281A;
+  --color-forest: #1E4D33;
+  --color-pulse: #42A85D;
+  --color-surface: #FFFFFF;
+  --color-muted: #F3F1EC;
+
+  --font-heading: var(--font-space-grotesk), sans-serif;
+  --font-serif: var(--font-instrument-serif), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+:root {
+  --background: #FBFAF7;
+  --foreground: #12281A;
+  --brand: #1E4D33;
+  --accent: #42A85D;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scroll reveal motion utilities */
+@keyframes revealY {
+  from {
+    opacity: 0;
+    transform: translateY(36px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes pulseLive {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.6;
+  }
+}
+
+@keyframes driftSubtle {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(18px, -12px) rotate(3deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+.animate-reveal {
+  animation: revealY 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-live-pulse {
+  animation: pulseLive 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-drift {
+  animation: driftSubtle 14s ease-in-out infinite;
+}
+
+/* Capsule glassmorphism */
+.capsule-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 77, 51, 0.14);
+}
+
+/* Persistent Accessibility Mode override */
+.a11y-mode {
+  font-size: 110%;
+  line-height: 1.6;
+}
+
+.a11y-mode * {
+  letter-spacing: normal !important;
+}
+
+/* WCAG 2.1 AA respects prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-drift {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .animate-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}

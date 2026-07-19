@@ -1,0 +1,104 @@
+{
+  "lastUpdated": "2026-07-19T18:45:00Z",
+  "matchInfo": {
+    "eventTitle": "FIFA World Cup 2026 Final: Match 104",
+    "kickoffTime": "2026-07-19T20:00:00Z",
+    "expectedAttendance": 82500,
+    "currentWeather": "26°C Clear, Light SW Breeze (14 km/h)"
+  },
+  "crowdZones": [
+    {
+      "zoneId": "gate-b-plaza",
+      "zoneName": "Gate B East Transit Hub Plaza",
+      "currentOccupancyPct": 88,
+      "flowRatePerMin": 420,
+      "riskStatus": "high",
+      "recommendedMitigation": "Reroute arriving transit passengers toward Gate A North Plaza express portals."
+    },
+    {
+      "zoneId": "gate-a-plaza",
+      "zoneName": "Gate A North Plaza Express",
+      "currentOccupancyPct": 42,
+      "flowRatePerMin": 310,
+      "riskStatus": "low",
+      "recommendedMitigation": "Optimal flow rate maintained; open 2 additional express turnstiles."
+    },
+    {
+      "zoneId": "concourse-south",
+      "zoneName": "South Concourse Lower Bowl Ring",
+      "currentOccupancyPct": 67,
+      "flowRatePerMin": 290,
+      "riskStatus": "moderate",
+      "recommendedMitigation": "Deploy 4 volunteer marshals to direct concessions lines away from main aisle."
+    },
+    {
+      "zoneId": "gate-d-vip",
+      "zoneName": "Gate D West Accessible & VIP Portal",
+      "currentOccupancyPct": 28,
+      "flowRatePerMin": 85,
+      "riskStatus": "low",
+      "recommendedMitigation": "Maintain clear priority wheelchair and family lanes."
+    }
+  ],
+  "transitLines": [
+    {
+      "lineId": "nynj-rail-express",
+      "lineName": "Secaucus Meadowlands Express Rail",
+      "type": "rail",
+      "status": "heavy_congestion",
+      "nextDepartureMins": [3, 9, 15],
+      "congestionLevelPct": 92
+    },
+    {
+      "lineId": "wc-electric-shuttle",
+      "lineName": "Zero-Emission Fan Shuttle Route 4",
+      "type": "shuttle",
+      "status": "normal",
+      "nextDepartureMins": [2, 6, 10, 14],
+      "congestionLevelPct": 45
+    },
+    {
+      "lineId": "nyc-port-auth-bus",
+      "lineName": "Midtown Direct Transit Bus Line",
+      "type": "bus",
+      "status": "delayed",
+      "nextDepartureMins": [8, 18, 28],
+      "congestionLevelPct": 78
+    }
+  ],
+  "sustainability": {
+    "timestamp": "2026-07-19T18:45:00Z",
+    "waterUsageLiters": 184500,
+    "waterTargetLiters": 220000,
+    "energyUsageKwh": 41200,
+    "solarOffsetPct": 64.5,
+    "wasteDivertedPct": 88.2,
+    "compostKg": 1420
+  },
+  "recentIncidents": [
+    {
+      "id": "INC-2026-1041",
+      "timestamp": "2026-07-19T18:32:00Z",
+      "category": "crowd",
+      "location": "Gate B East Entrance Turnstile 12",
+      "summary": "Temporary bottleneck due to ticketing barcode scanner surge; queue extended 45 meters.",
+      "status": "active"
+    },
+    {
+      "id": "INC-2026-1039",
+      "timestamp": "2026-07-19T18:15:00Z",
+      "category": "accessibility",
+      "location": "Section 140 West Concourse Elevator 3",
+      "summary": "Wheelchair assistance escort requested for family of 4 arriving from Gate D.",
+      "status": "resolved"
+    },
+    {
+      "id": "INC-2026-1035",
+      "timestamp": "2026-07-19T17:50:00Z",
+      "category": "transit",
+      "location": "Meadowlands Rail Station Platform B",
+      "summary": "Platform crowd density reached 80%; overflow holding pens activated.",
+      "status": "mitigated"
+    }
+  ]
+}

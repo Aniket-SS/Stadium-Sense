@@ -19,13 +19,12 @@ export function StadiumMapSvg({
   const activeSet = new Set(activePathNodeIds);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl bg-canvas border border-[#1E4D33]/15 p-4 shadow-sm">
-      <svg
-        viewBox="0 0 100 100"
-        className="w-full h-auto aspect-[16/10]"
-        role="img"
-        aria-label="NYNJ MetLife Stadium 2026 Interactive Vector Map"
-      >
+    <div 
+      className="relative w-full overflow-hidden rounded-2xl bg-canvas border border-[#1E4D33]/15 p-4 shadow-sm"
+      role="group"
+      aria-label="NYNJ MetLife Stadium 2026 Interactive Vector Map"
+    >
+      <svg viewBox="0 0 100 100" className="w-full h-auto aspect-[16/10]">
         {/* Pitch / Field Outline */}
         <rect
           x="32"

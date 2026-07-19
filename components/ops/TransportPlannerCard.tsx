@@ -60,7 +60,7 @@ export function TransportPlannerCard({ transitLines, kickoffTime }: TransportPla
               >
                 <div>
                   <div className="text-xs font-semibold text-obsidian">{line.lineName}</div>
-                  <div className="text-[11px] text-obsidian/60 flex items-center gap-2 mt-0.5">
+                  <div className="text-[11px] text-obsidian/70 flex items-center gap-2 mt-0.5">
                     <Clock className="h-3 w-3" />
                     <span>Next departures: {line.nextDepartureMins.join(', ')} mins</span>
                   </div>
@@ -79,7 +79,7 @@ export function TransportPlannerCard({ transitLines, kickoffTime }: TransportPla
 
         {/* AI Recommendation */}
         {recommendation && (
-          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20">
+          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20" role="status" aria-live="polite">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-forest mb-1">
               <Sparkles className="h-3.5 w-3.5 text-pulse" />
               <span>{recommendation.headline}</span>

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { computeShortestPath, getVenueGraph } from '@/lib/data/loaders';
+import { computeShortestPath } from '@/lib/data/loaders';
 
 describe('Unit: Venue Graph Dijkstra Pathfinding', () => {
   it('computes shortest path from Gate A to Section 101', () => {

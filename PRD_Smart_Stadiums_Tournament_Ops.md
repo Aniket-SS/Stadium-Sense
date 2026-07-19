@@ -2,13 +2,6 @@
 ## Smart Stadiums & Tournament Operations — GenAI Platform
 ### PromptWars Virtual · Challenge 4 · FIFA World Cup 2026
 
-**Prepared for:** Vineeth S N
-**Build target:** Antigravity (agentic build) — to be executed as a single coherent build task
-**Repo constraint:** GitHub repository, must remain under 10 MB
-**Submission window:** 06 Jul 2026 04:00 PM IST → 19 Jul 2026 11:59 PM IST
-**Current rank:** #587 / 40,452 — **target: top 100**
-
----
 
 ## 1. Context & Judging Alignment
 

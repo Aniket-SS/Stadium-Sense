@@ -49,7 +49,12 @@ export function OpsDigestCard({ incidents }: OpsDigestCardProps) {
         </div>
 
         {/* Incidents feed */}
-        <div className="space-y-2.5 max-h-44 overflow-y-auto pr-1">
+        <div 
+          className="space-y-2.5 max-h-44 overflow-y-auto pr-1"
+          tabIndex={0}
+          role="region"
+          aria-label="Recent operational log entries"
+        >
           {incidents.map((inc) => (
             <div
               key={inc.id}
@@ -75,7 +80,7 @@ export function OpsDigestCard({ incidents }: OpsDigestCardProps) {
 
         {/* AI SITREP */}
         {recommendation && (
-          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20">
+          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20" role="status" aria-live="polite">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-forest mb-1">
               <Sparkles className="h-3.5 w-3.5 text-pulse" />
               <span>{recommendation.headline}</span>

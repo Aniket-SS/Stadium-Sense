@@ -53,7 +53,7 @@ export function AskOpsAiModal() {
             </p>
           </div>
         </div>
-        <span className="rounded-full bg-pulse/20 px-3 py-1 text-xs font-mono text-pulse">
+        <span className="rounded-full bg-pulse/20 px-3 py-1 text-xs font-mono text-pulse-light">
           Command Access Active
         </span>
       </div>
@@ -106,7 +106,7 @@ export function AskOpsAiModal() {
 
       {/* Recommendation display */}
       {recommendation && (
-        <div className="mt-6 rounded-2xl bg-surface/10 p-5 border border-pulse/30">
+        <div className="mt-6 rounded-2xl bg-surface/10 p-5 border border-pulse/30" role="status" aria-live="polite">
           <div className="flex items-center justify-between mb-2">
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-pulse">
               <Sparkles className="h-4 w-4" />

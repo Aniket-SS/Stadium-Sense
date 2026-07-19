@@ -12,7 +12,7 @@ export function ProofSection() {
               LIVE REASONING TRANSCRIPT — INTENT: CROWD_MANAGEMENT
             </span>
           </div>
-          <span className="rounded-full bg-pulse/20 px-2.5 py-0.5 text-[10px] font-mono text-pulse">
+          <span className="rounded-full bg-pulse/20 px-2.5 py-0.5 text-[10px] font-mono text-pulse-light">
             CONFIDENCE: 96%
           </span>
         </div>

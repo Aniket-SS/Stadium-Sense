@@ -35,7 +35,7 @@ export function ConciergeChat() {
     if (!textToSend.trim() || loading) return;
 
     const userMsg: ChatMessage = {
-      id: `user-${Date.now()}`,
+      id: `user-${crypto.randomUUID()}`,
       sender: 'user',
       text: textToSend,
       locale,
@@ -58,7 +58,7 @@ export function ConciergeChat() {
 
       const data = await res.json();
       const aiMsg: ChatMessage = {
-        id: `ai-${Date.now()}`,
+        id: `user-${crypto.randomUUID()}`,
         sender: 'ai',
         text: data.plainLanguageSummary || data.headline || 'I am ready to assist with your World Cup navigation.',
       };
@@ -89,14 +89,14 @@ export function ConciergeChat() {
             <h2 className="font-heading text-sm font-semibold text-obsidian">
               Multilingual GenAI Concierge
             </h2>
-            <p className="text-[11px] text-obsidian/60">Auto-detects language · World Cup 2026</p>
+            <p className="text-[11px] text-obsidian/70">Auto-detects language · World Cup 2026</p>
           </div>
         </div>
         <LanguageSwitcher currentLocale={locale} onLocaleChange={setLocale} />
       </div>
 
       {/* Messages Feed */}
-      <div className="flex-1 overflow-y-auto p-6 space-y-4">
+      <div className="flex-1 overflow-y-auto p-6 space-y-4" role="log" aria-live="polite" aria-relevant="additions">
         {messages.map((msg) => (
           <div
             key={msg.id}
@@ -124,8 +124,8 @@ export function ConciergeChat() {
           </div>
         ))}
         {loading && (
-          <div className="flex items-center gap-2 text-xs text-obsidian/60 pl-10">
-            <Loader2 className="h-3.5 w-3.5 animate-spin text-pulse" />
+          <div className="flex items-center gap-2 text-xs text-obsidian/70 pl-10" role="status" aria-live="polite">
+            <Loader2 className="h-3.5 w-3.5 animate-spin text-pulse" aria-hidden="true" />
             <span>Reasoning over stadium knowledge base...</span>
           </div>
         )}

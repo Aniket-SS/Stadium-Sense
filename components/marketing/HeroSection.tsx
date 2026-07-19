@@ -81,7 +81,7 @@ export function HeroSection() {
             { label: 'Problem Alignment', value: '8/8 Core Modules' },
           ].map((item) => (
             <div key={item.label} className="p-2 border-r last:border-r-0 border-[#1E4D33]/10">
-              <div className="text-[11px] font-medium text-obsidian/60">{item.label}</div>
+              <div className="text-[11px] font-medium text-obsidian/70">{item.label}</div>
               <div className="text-xs font-semibold text-forest mt-0.5">{item.value}</div>
             </div>
           ))}

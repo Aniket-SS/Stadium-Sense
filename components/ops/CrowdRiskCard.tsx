@@ -75,7 +75,7 @@ export function CrowdRiskCard({ zones }: CrowdRiskCardProps) {
 
         {/* AI Mitigation output */}
         {recommendation && (
-          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20">
+          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20" role="status" aria-live="polite">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-forest mb-1">
               <Sparkles className="h-3.5 w-3.5 text-pulse" />
               <span>{recommendation.headline}</span>

@@ -51,7 +51,7 @@ export function SustainabilityCard({ metrics }: SustainabilityCardProps) {
         {/* ESG Grid */}
         <div className="grid grid-cols-3 gap-3">
           <div className="rounded-xl bg-canvas p-3 border border-[#1E4D33]/10">
-            <div className="flex items-center gap-1.5 text-xs text-obsidian/60 mb-1">
+            <div className="flex items-center gap-1.5 text-xs text-obsidian/70 mb-1">
               <Droplet className="h-3.5 w-3.5 text-blue-600" />
               <span>Water</span>
             </div>
@@ -62,7 +62,7 @@ export function SustainabilityCard({ metrics }: SustainabilityCardProps) {
           </div>
 
           <div className="rounded-xl bg-canvas p-3 border border-[#1E4D33]/10">
-            <div className="flex items-center gap-1.5 text-xs text-obsidian/60 mb-1">
+            <div className="flex items-center gap-1.5 text-xs text-obsidian/70 mb-1">
               <Zap className="h-3.5 w-3.5 text-amber-500" />
               <span>Solar Offset</span>
             </div>
@@ -71,7 +71,7 @@ export function SustainabilityCard({ metrics }: SustainabilityCardProps) {
           </div>
 
           <div className="rounded-xl bg-canvas p-3 border border-[#1E4D33]/10">
-            <div className="flex items-center gap-1.5 text-xs text-obsidian/60 mb-1">
+            <div className="flex items-center gap-1.5 text-xs text-obsidian/70 mb-1">
               <Recycle className="h-3.5 w-3.5 text-forest" />
               <span>Diverted</span>
             </div>
@@ -82,7 +82,7 @@ export function SustainabilityCard({ metrics }: SustainabilityCardProps) {
 
         {/* AI Insight */}
         {recommendation && (
-          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20">
+          <div className="mt-4 rounded-2xl bg-forest/5 p-4 border border-forest/20" role="status" aria-live="polite">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-forest mb-1">
               <Sparkles className="h-3.5 w-3.5 text-pulse" />
               <span>{recommendation.headline}</span>

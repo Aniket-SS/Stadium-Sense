@@ -4,15 +4,17 @@ import React, { useEffect, useState } from 'react';
 import { Eye } from 'lucide-react';
 
 export function AccessibilityToggle() {
-  const [a11yActive, setA11yActive] = useState(false);
+  const [a11yActive, setA11yActive] = useState(
+    () => typeof window !== 'undefined' && localStorage.getItem('stadiumsense_a11y_mode') === 'true'
+  );
 
   useEffect(() => {
-    const saved = localStorage.getItem('stadiumsense_a11y_mode') === 'true';
-    setA11yActive(saved);
-    if (saved) {
+    if (a11yActive) {
       document.body.classList.add('a11y-mode');
+    } else {
+      document.body.classList.remove('a11y-mode');
     }
-  }, []);
+  }, [a11yActive]);
 
   const handleToggle = () => {
     const nextState = !a11yActive;

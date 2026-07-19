@@ -24,7 +24,7 @@ export function StatusPulse({ label, sublabel, active = true }: StatusPulseProps
         />
       </span>
       <span className="font-semibold">{label}</span>
-      {sublabel && <span className="text-obsidian/60">{sublabel}</span>}
+      {sublabel && <span className="text-obsidian/70">{sublabel}</span>}
     </div>
   );
 }
